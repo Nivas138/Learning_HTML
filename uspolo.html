@@ -19,6 +19,20 @@
     background-repeat:no-repeat;
     background-size:4000px 2000px;
    }
+  .logo{
+    border-radius:50%;
+    border-color:silver;
+    border-style:solid;
+    border-size:
+   }
+   .constrains{
+    padding:20px 10px 10px 20px;
+    margin:30px 30px 30px 30px;
+    border:1px solid red;
+    }
+    body{
+    background-color:silver;
+    }
 </style>
 <body>
  <div id="bck">
@@ -27,8 +41,29 @@
    <h3>U.S POLO ASSN </h3>
    <h5>since 1890</h5>
   </div>
- <p><img src="https://pbs.twimg.com/profile_images/733332854193688576/n8d20H1F_400x400.jpg" alt="load error" height=250 width=250  align="center"> 
+ <a href="https://en.wikipedia.org/wiki/U.S._Polo_Assn."><img class="logo" src="https://pbs.twimg.com/profile_images/733332854193688576/n8d20H1F_400x400.jpg" alt="load error" height="100" width="100" align="left"></a> 
  <p style="font-size:16px;color:red"><b>WHO WE ARE?</b></p>
- <p class="green-text">The sport of polo is a team sport unlike any other that showcases the powerful bond between the player and their equine partner. One of the oldest team sports, every game is an exhilarating display of horsepower, athleticism and control. The United States Polo Association® is the official governing body of the sport of polo in the United States. Founded in 1890, the USPA promotes the game of polo and coordinates the activities of its Member Clubs and Registered Players.</p></div>
+ <p class="green-text">The sport of polo is a team sport unlike any other that showcases the powerful bond between the player and their equine partner. One of the oldest team sports, every game is an exhilarating display of horsepower, athleticism and control. The United States Polo Association® is the official governing body of the sport of polo in the United States. Founded in 1890, the USPA promotes the game of polo and coordinates the activities of its Member Clubs and Registered Players.</p></div><br>
+ <p>To be Known<br><br><a href="https://www.uspolo.org/apparel/about-the-brand">About Brand</a>
+ <ul>
+  <li>SPORT</li>
+  <li>APPAREL</li>
+  <li>SHOP</li>
+ </ul>
+ <p style="color:blue">BOOKS</p>
+ <ol>
+  <li>AMERICA</li>
+  <li>EUROPE</li>
+  <li>INDIA</li>
+ </ol>
+ <form action="/input_uspolo.txt" class="constrains">
+  <label><input type="radio" name="SHIRTS-PANTS">SHIRTS</label>
+  <label><input type="radio" name="SHIRTS-PANTS">PANTS</label><br><br>
+  <label><input type="checkbox" name="TROUSERS-TSHIRTS">TROUSERS</label>
+  <label><input type="checkbox" name="TSHIRTS">TSHIRTS</label><br><br>
+  <input type="text" placeholder="Enter country name" required>
+  <button type="submit" style="color:green">SUBMIT</button>
+   
+ </form>
 </body>
 </html>
