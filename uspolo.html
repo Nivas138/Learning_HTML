@@ -1,5 +1,10 @@
 <html>
+<head>
+ <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Mono" rel="stylesheet"> 
+</head>
 <style>
   h1{
      color:red;
@@ -35,35 +40,47 @@
     }
 </style>
 <body>
+ <div class="container-fluid">
  <div id="bck">
-  <div align="center">
-   <h1>USPA</h1>
-   <h3>U.S POLO ASSN </h3>
-   <h5>since 1890</h5>
+  <div>
+   <h1 class="text-center">USPA</h1>
+   <h3 class="text-center">U.S POLO ASSN </h3>
+   <h5 class="text-center">since 1890</h5>
   </div>
- <a href="https://en.wikipedia.org/wiki/U.S._Polo_Assn."><img class="logo" src="https://pbs.twimg.com/profile_images/733332854193688576/n8d20H1F_400x400.jpg" alt="load error" height="100" width="100" align="left"></a> 
+  <a href="https://en.wikipedia.org/wiki/U.S._Polo_Assn."><img class="img-responsive logo" src="https://pbs.twimg.com/profile_images/733332854193688576/n8d20H1F_400x400.jpg" alt="load error" height="100" width="100" align="left"></a> 
  <p style="font-size:16px;color:red"><b>WHO WE ARE?</b></p>
  <p class="green-text">The sport of polo is a team sport unlike any other that showcases the powerful bond between the player and their equine partner. One of the oldest team sports, every game is an exhilarating display of horsepower, athleticism and control. The United States Polo Association® is the official governing body of the sport of polo in the United States. Founded in 1890, the USPA promotes the game of polo and coordinates the activities of its Member Clubs and Registered Players.</p></div><br>
- <p>To be Known<br><br><a href="https://www.uspolo.org/apparel/about-the-brand">About Brand</a>
+ <div class="text-center"><p>To be Known</p></div><br><br>
+ <div class="row">
+ <div class="col-xs-3"><button class="btn btn-block" type="click"><a href="https://www.uspolo.org/apparel/about-the-brand">About Brand</a></button></div><br><br>
  <ul>
   <li>SPORT</li>
   <li>APPAREL</li>
   <li>SHOP</li>
  </ul>
- <p style="color:blue">BOOKS</p>
+ </div>
+ <div class="col-xs-3"><button class="btn btn-block">BOOKS</button>
  <ol>
   <li>AMERICA</li>
   <li>EUROPE</li>
   <li>INDIA</li>
  </ol>
+ </div>
+ </div>
  <form action="/input_uspolo.txt" class="constrains">
   <label><input type="radio" name="SHIRTS-PANTS">SHIRTS</label>
   <label><input type="radio" name="SHIRTS-PANTS">PANTS</label><br><br>
   <label><input type="checkbox" name="TROUSERS-TSHIRTS">TROUSERS</label>
   <label><input type="checkbox" name="TSHIRTS">TSHIRTS</label><br><br>
-  <input type="text" placeholder="Enter country name" required>
-  <button type="submit" style="color:green">SUBMIT</button>
-   
+  <input type="text" placeholder="Enter country name" required><br>
+  <button type="submit" style="color:green">SUBMIT</button><br>
+  <div class="row">
+  <button class="btn btn-block text-primary" type="click"><i class="fa fa-thumbs-up">LIKE</i></button> 
+  <button class="btn btn-block text-primary" type="click">Info</button>
+  <button class="btn btn-block text-primary" type="click">Delete</button>
+  </div>
  </form>
+</div>
 </body>
 </html>
+
